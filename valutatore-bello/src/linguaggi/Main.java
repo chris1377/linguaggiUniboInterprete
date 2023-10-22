@@ -23,5 +23,9 @@ public class Main {
 		ast.accept(vPost);
 		System.out.println(ast + " = " + vPost.getResult());
 		
+		LettereExpVisitor vLet = new LettereExpVisitor();
+		ast.accept(vLet);
+		System.out.println(ast + " = " + vLet.getResult());
+		
 	}
 }
