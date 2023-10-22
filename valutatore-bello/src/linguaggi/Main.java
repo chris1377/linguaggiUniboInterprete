@@ -19,5 +19,9 @@ public class Main {
 		ast.accept(vEval);
 		System.out.println(ast + " = " + vEval.getResult());
 		
+		PostExpVisitor vPost = new PostExpVisitor();
+		ast.accept(vPost);
+		System.out.println(ast + " = " + vPost.getResult());
+		
 	}
 }
