@@ -5,7 +5,7 @@ import valutatori.*;
 public class Main {
 	public static void main (String[] args) {
 		
-		String expression = "(52^2)^2";
+		String expression = "(52^2)+2-47";
 		MyScanner scanner = new MyScanner(expression);
 		MyInterpreter parser = new MyInterpreter(scanner);
 		Exp ast = parser.parseExp(); //Crea albero dal parser
