@@ -19,11 +19,11 @@ public class Main {
 		ast.accept(vEval);
 		System.out.println(ast + " = " + vEval.getResult());
 		
-		PostExpVisitor vPost = new PostExpVisitor();
+		LettereExpVisitor vPost = new LettereExpVisitor();
 		ast.accept(vPost);
 		System.out.println(ast + " = " + vPost.getResult());
 		
-		LettereExpVisitor vLet = new LettereExpVisitor();
+		PostExpVisitor vLet = new PostExpVisitor();
 		ast.accept(vLet);
 		System.out.println(ast + " = " + vLet.getResult());
 		

@@ -3,7 +3,7 @@ package valutatori;
 import albero.*;
 import linguaggi.*;
 
-public class LettereExpVisitor implements ExpVisitor{
+public class PostExpVisitor implements ExpVisitor{
 	
 
 	String curs = "";

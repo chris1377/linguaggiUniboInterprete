@@ -4,7 +4,7 @@ import albero.*;
 import linguaggi.*;
 import pl.allegro.finance.tradukisto.ValueConverters;
 
-public class PostExpVisitor implements ExpVisitor{
+public class LettereExpVisitor implements ExpVisitor{
 	
 
 	String curs = "";
